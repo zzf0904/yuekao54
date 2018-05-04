@@ -7,7 +7,11 @@ require.config({
     }
 });
 require(['jquery', 'template'], function() {
-    // $.ajax({
-    //     url: ''
-    // })
+    $.ajax({
+        url: '../mock/data/page1.json',
+        success: function(data) {
+            console.log(data);
+        }
+    });
+    // 点击切换
 });

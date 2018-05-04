@@ -6,10 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
 </head>
 
 <body>
-    indexindex
+    <div class="wrap">
+        <header class='header'>
+            <i class="icon iconfont icon-xiangzuo"></i>
+            <h3>居家</h3>
+            <i class="icon iconfont icon-fangdajing"></i>
+        </header>
+        <section class='section'>
+            <div class="top-nav">
+                <ul class='small-nav'>
+                    <!-- page1 -->
+                    <li class='on'>
+
+
+
+
+                    </li>
+                    <li>0002</li>
+                    <li>0003</li>
+                    <li>0004</li>
+                    <li>0005</li>
+                    <li>0006</li>
+                    <li>0007</li>
+                    <li>0008</li>
+                    <li>0009</li>
+                    <li>0010</li>
+                </ul>
+            </div>
+            <div class="main-nav">
+                <ol>
+                    <!-- page1 -->
+                    <li class='bg'>
+                        0001
+
+
+                    </li>
+                    <li>0002</li>
+                    <li>0003</li>
+                    <li>0004</li>
+                    <li>0005</li>
+                    <li>0006</li>
+                    <li>0007</li>
+                    <li>0008</li>
+                    <li>0009</li>
+                    <li>0010</li>
+                </ol>
+            </div>
+            <div class="p"></div>
+        </section>
+        <footer class='footer'></footer>
+    </div>
+    <script src='./js/libs/jquery-2.1.1.min.js'></script>
+    <script>
+        $('.small-nav>li').each(function(i, v) {
+            $(this).on('click', function() {
+                $('.small-nav>li').eq(i).addClass('on').siblings().removeClass('on');
+                $('.main-nav>ol>li').eq(i).addClass('bg').siblings().removeClass('bg');
+            });
+        });
+    </script>
+    <!-- 引入模块 -->
     <script src='./js/libs/require.js' data-main='./js/index.js'></script>
 </body>
 
