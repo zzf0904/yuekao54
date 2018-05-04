@@ -23,31 +23,41 @@
         <section class='section'>
             <div class="top-nav">
                 <ul class='small-nav'>
-                    <!-- page1 -->
+                    <!-- page1btnbtnbtnbtnbtnbtn -->
                     <li class='on'>
-
-
-
-
+                        床品件套
                     </li>
-                    <li>0002</li>
-                    <li>0003</li>
-                    <li>0004</li>
-                    <li>0005</li>
-                    <li>0006</li>
-                    <li>0007</li>
-                    <li>0008</li>
-                    <li>0009</li>
-                    <li>0010</li>
+                    <li>被子</li>
+                    <li>家居</li>
+                    <li>收纳</li>
+                    <li>布艺软装</li>
+                    <li>被子</li>
+                    <li>家居</li>
+                    <li>收纳</li>
+                    <li>布艺软装</li>
+                    <li>被子</li>
                 </ul>
             </div>
             <div class="main-nav">
                 <ol>
-                    <!-- page1 -->
+                    <!-- page1_start -->
                     <li class='bg'>
-                        0001
-
-
+                        <div class="page1">
+                            <script id='tpl' type='text/x-template-Handlebars'>
+                                {{#each this}}
+                                <div class="box" data-src='{{@index}}'>
+                                    <div class="img">
+                                        <img src="{{imgurl}}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>{{text1}}</p>
+                                        <span>{{text2}}</span>
+                                    </div>
+                                </div>
+                                {{/each}}
+                            </script>
+                        </div>
+                        <!-- page1_end -->
                     </li>
                     <li>0002</li>
                     <li>0003</li>
@@ -60,18 +70,11 @@
                     <li>0010</li>
                 </ol>
             </div>
-            <div class="p"></div>
         </section>
         <footer class='footer'></footer>
     </div>
     <script src='./js/libs/jquery-2.1.1.min.js'></script>
     <script>
-        $('.small-nav>li').each(function(i, v) {
-            $(this).on('click', function() {
-                $('.small-nav>li').eq(i).addClass('on').siblings().removeClass('on');
-                $('.main-nav>ol>li').eq(i).addClass('bg').siblings().removeClass('bg');
-            });
-        });
     </script>
     <!-- 引入模块 -->
     <script src='./js/libs/require.js' data-main='./js/index.js'></script>

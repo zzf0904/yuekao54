@@ -33,6 +33,7 @@ html,body,.wrap{
     width:100%;
     height: 0.4rem;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     background: #ccc;
     font-size: 0.3rem;
 }
@@ -40,7 +41,7 @@ html,body,.wrap{
     display:flex;
     li{
         flex-shrink: 0;
-        margin:0 0.1rem;
+        margin:0 0.2rem;
     }
     li.on{
         color:orange;
@@ -51,11 +52,39 @@ html,body,.wrap{
     width:100%;
     height: 100%;
     ol{
+        width:100%;
+        height: 100%;
         li{
+            width:100%;
+            height: 100%;
             display: none;
         }
         li.bg{
             display: block;
+        }
+    }
+}
+.page1{
+    display: flex;
+    flex-wrap:wrap;
+    .box{
+        width:50%;
+        height: 4.3rem;
+        padding:0.15rem;
+        .img{
+            width:100%;
+            height: 3rem;
+            img{
+                width:100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        .text{
+            width:100%;
+            span{
+                color:red;
+            }
         }
     }
 }

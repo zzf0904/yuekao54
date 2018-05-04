@@ -35,6 +35,7 @@ body,
   width: 100%;
   height: 0.4rem;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   background: #ccc;
   font-size: 0.3rem;
 }
@@ -43,7 +44,7 @@ body,
 }
 .small-nav li {
   flex-shrink: 0;
-  margin: 0 0.1rem;
+  margin: 0 0.2rem;
 }
 .small-nav li.on {
   color: orange;
@@ -53,9 +54,39 @@ body,
   width: 100%;
   height: 100%;
 }
+.main-nav ol {
+  width: 100%;
+  height: 100%;
+}
 .main-nav ol li {
+  width: 100%;
+  height: 100%;
   display: none;
 }
 .main-nav ol li.bg {
   display: block;
+}
+.page1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page1 .box {
+  width: 50%;
+  height: 4.3rem;
+  padding: 0.15rem;
+}
+.page1 .box .img {
+  width: 100%;
+  height: 3rem;
+}
+.page1 .box .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.page1 .box .text {
+  width: 100%;
+}
+.page1 .box .text span {
+  color: red;
 }
